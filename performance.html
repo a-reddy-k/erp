@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+  <link rel="icon" href="resources\PRERP_SA.png" type="image/x-icon" />
+  <title>PRERP - Profile</title>
+</head>
+
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <a href="dashboard.html"><img src="resources\PRERP_SA.png" alt="" />
+          </a>
+          <h1>PR<span class="title">ERP</span></h1>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a href="dashboard.html"><span class="material-icons-sharp"> grid_view </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="profile.html"><span class="material-icons-sharp"> person </span>
+            <h3>Profile</h3>
+          </a>
+
+          <a href="attendance.html"><span class="material-icons-sharp"> calendar_month </span>
+            <h3>Attendance</h3>
+          </a>
+          <a href="team.html"><span class="material-icons-sharp"> assignment </span>
+            <h3> team</h3>
+          </a>
+          <a href="payments.html"><span class="material-icons-sharp"> calendar_month </span>
+            <h3>Payments</h3>
+          </a>
+          <a href="performance.html" class="active"><span class="material-icons-sharp"> calendar_month </span>
+            <h3>Performance</h3>
+          </a>
+          <a href="feedback.html"><span class="material-icons-sharp"> forum </span>
+            <h3>Feedback</h3>
+          </a>
+
+          <a href="updatepassword.html"><span class="material-icons-sharp">
+              manage_accounts
+            </span>
+            <h3>Update Password</h3>
+          </a>
+
+          <a href="index.html" onclick="return confirm('Are you sure you want to Logout?')"><span
+              class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Performance</h1>
+
+      <div class="date">
+        <!-- <input type="date" value="2022-08-26" /> -->
+        <label for="date">13 / 05 / 2023</label>
+      </div>
+
+      <div class="insights">
+          <div class="attendance">
+            <span class="material-icons-sharp"> calendar_month </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Attendance</h3>
+                <h1 id="totattendance">80%</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <!-- <circle cx="38" cy="38" r="36"></circle> -->
+                </svg>
+                <div class="number">
+                  <p id="totattendance1"></p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"></small>
+          </div>
+          <div class="op">
+            <span class="material-icons-sharp"> assessment </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Overall Performance</h3>
+                <h1 id="overallper">90%</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <!-- <circle cx="38" cy="38" r="36"></circle> -->
+                </svg>
+                <div class="number">
+                  <p id="overallper1"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+
+
+    </main>
+
+
+
+
+  </div>
+</body>
+
+</html>
